@@ -1,0 +1,502 @@
+
+.navbar-light .navbar-brand {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.nav.navbar-nav.nav-right {
+  margin: auto;
+}
+
+.navbar-light .navbar-brand {
+}
+
+.logo {
+  width: 40px;
+}
+
+.navbar-light .navbar-brand {
+}
+
+.navbar-light .navbar-brand {
+}
+
+.navbar-light .navbar-brand {
+}
+
+.navbar-light .navbar-brand {
+  font-size: 20px;
+}
+
+.jumbotron {
+  margin-top: -80px;
+  height: 900px;
+}
+
+.jumbotron {
+  padding-top: 300px;
+  border-color: rgb(40,81,163);
+}
+
+#headtext {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+#smtexthead {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.border.rounded-circle.box {
+  /*width: 330px;*/
+  color: rgb(40,81,163);
+}
+
+.jumbotron.border.rounded-0.headtext {
+  color: rgb(40,81,163);
+}
+
+#scheduleservice {
+  border-radius: 30px;
+  width: 200px;
+  height: 40px;
+  padding-top: 8px;
+  border-color: white;
+}
+
+#scheduleservice :hover {
+  background-color: white;
+  color: red;
+  text-decoration: initial;
+}
+
+#scheduleservice {
+}
+
+@media (min-width: 300px) {
+  #headtext {
+    font-size: 50px;
+  }
+}
+
+#headtext {
+}
+
+@media (min-width: 992px) {
+  #headtext {
+    font-size: 70px;
+  }
+}
+
+#headtext {
+}
+
+#whatwedocont {
+  padding-top: 100px;
+}
+
+.circlediv {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px rgb(145,149,171);
+}
+
+.circle.p {
+}
+
+.circlep {
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-top: 55px;
+}
+
+#nct {
+  margin: auto;
+}
+
+.picicon {
+  width: 100px;
+  padding-bottom: 0px;
+}
+
+.picicon {
+  margin-bottom: 20px;
+}
+
+.fa.fa-car.icon {
+}
+
+#car-fafa {
+}
+
+#diagnostics {
+  padding-top: 25px;
+}
+
+#smalliconpadding {
+  margin-top: 25px;
+}
+
+.description {
+}
+
+@media (min-width: 768px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 900px !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1100px;
+  }
+}
+
+@media (min-width: 300px) {
+  .navbar-light .navbar-brand {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-light .navbar-brand {
+    display: block;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.col.leftside {
+  margin: auto;
+}
+
+#leftimg {
+  float: left;
+}
+
+.col-xl-6.offset-xl-0.leftside {
+  text-align: center;
+}
+
+#leftimg {
+  width: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#rightsd {
+  margin: auto;
+}
+
+#headright {
+}
+
+#headright {
+  text-align: center;
+  font-size: 60px;
+}
+
+img {
+  width: 100px;
+}
+
+.col-xl-4.offset-xl-1.leftside {
+  text-align: center;
+}
+
+@media (min-width: 300px) {
+  #Profilep {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+#brands {
+  margin-top: px;
+}
+
+@media (min-width: 300px) {
+  #leftimg {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #leftimg {
+    display: block;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #leftimg {
+    width: 500px;
+  }
+}
+
+@media (min-width: 300px) {
+  #headright {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  #Profilep {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+#rightsd {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#Profilep {
+}
+
+#Profilep {
+}
+
+@media (min-width: 1200px) {
+  #rightsd {
+    padding-top: 160px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #rightsd {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #headright {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #Profilep {
+    font-size: 22px;
+  }
+}
+
+#rightsd {
+}
+
+img {
+}
+
+#profile-img {
+  width: 100%;
+}
+
+#textdiv {
+  margin: auto;
+  text-align: center;
+}
+
+#profile {
+  text-align: center;
+  font-size: 60px;
+}
+
+#rProfile {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+@media (min-width: 300px) {
+  #profile-img {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profile-img {
+    display: block;
+  }
+}
+
+@media (min-width: 300px) {
+  #roeblu {
+    background-color: rgb(255,255,255);
+  }
+}
+
+@media (min-width: 1200px) {
+  #roeblu {
+    background-color: rgb(1,12,36);
+  }
+}
+
+@media (min-width: 300px) {
+  #profile {
+    color: rgb(255,255,255) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profile {
+    color: rgb(255,255,255) !important;
+    font-size: 60px!important;
+    width: 700px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 300px) {
+  #rProfile {
+    color: rgb(255,255,255) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #rProfile {
+    color: white !important;
+  }
+}
+
+#map {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro {
+  width: 1700px;
+}
+
+#map-head {
+  text-align: center;
+}
+
+#map {
+}
+
+#map {
+}
+
+.col.mapcol {
+  text-align: center;
+}
+
+#map {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 80%;
+}
+
+@media (min-width: 1200px) {
+  #map-head {
+    padding-bottom: 40PX;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1000px !important;
+    padding-top: 400px;
+  }
+}
+
+.border {
+  border: none !important;
+}
+
+.container-fluid.d-inline-block {
+  padding-bottom: 30px;
+}
+
+.features-boxed {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#car {
+  margin-bottom: 10px;
+}
+
+
+#locationp {
+  width: 200px;
+  margin: auto;
+}
+
+#profile {
+  font-size: 60px;
+}
+
+@media (min-width: 300px) {
+  #headtext {
+    font-size: 45px;
+    margin-top: -150px;
+  }
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  background-color: white;
+}
+
+#mapdb{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 300px) {
+  #mapframe {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 500px) {
+  #mapframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 700px) {
+  #mapframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 960px) {
+  #mapframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #mapframe {
+    width: 600px;
+    height: 400px;
+  }
+
+
+
+.btn .btn-info .newone :hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.205);
+}
+}

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>TheGarageDunboyne</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/brands.min.css" />
+  <link rel="stylesheet" href="assets/css/solid.min.css" />
+  <link rel="stylesheet" href="assets/css/regular.min.css" />
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/site-brands.css" />
+  <link rel="stylesheet" href="assets/css/Features-Boxed.css" />
+  <link rel="stylesheet" href="assets/css/Footer-Basic.css" />
+  <link rel="stylesheet" href="assets/css/Highlight-Phone.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
+  <link rel="stylesheet" href="assets/css/Map-Clean.css" />
+  <link rel="stylesheet" href="assets/css/Navigation-Clean.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+:root {
+  /* --- Colors --- */
+  --chat--color-primary: #35456b; /* Dark blue for user messages, matching the boxes */
+  --chat--color-primary-shade-50: #2d3b58;
+  --chat--color-primary-shade-100: #253145;
+  --chat--color-secondary: #709de7; /* Light blue for accents, matching "More >" links */
+  --chat--color-secondary-shade-50: #628cdb;
+  --chat--color-white: #eff1f4; /* All text is white */
+  --chat--color-light: #ffffff; /* Bot message background */
+  --chat--color-light-shade-50: #d2d5dc;
+  --chat--color-light-shade-100: #aeb1b8;
+  --chat--color-medium: #d2d4d9;
+  --chat--color-dark: #1f273d; /* Chat window and header background */
+  --chat--color-disabled: #777980;
+  --chat--color-typing: #b3b3b3;
+
+  /* --- Sizing and Transitions --- */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 0.75rem; /* Matches the rounded corners on your website */
+  --chat--transition-duration: 0.2s;
+
+  /* --- Window --- */
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+  --chat--window--background: var(--chat--color-dark); /* Dark background to match the website's hero section */
+  --chat--window--border: none;
+  --chat--window--box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  /* --- Header --- */
+  --chat--header--padding: 1rem 1.25rem;
+  --chat--header--background: #192033; /* A slightly darker shade for the header */
+  --chat--header--color: var(--chat--color-white);
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: none;
+  --chat--heading--font-size: 1.25rem;
+  --chat--subtitle--font-size: 0.85rem;
+  --chat--subtitle--line-height: 1.5;
+
+  /* --- Text Area (Input) --- */
+  --chat--textarea--height: 50px;
+  --chat--textarea--border: none;
+  --chat--textarea--border-radius: var(--chat--border-radius);
+  --chat--textarea--background: #35456b;
+  --chat--textarea--color: var(--chat--color-white);
+  --chat--textarea--placeholder-color: var(--chat--color-medium);
+
+  /* --- Messages --- */
+  --chat--message--font-size: 0.95rem;
+  --chat--message--padding: 0.75rem 1rem;
+  --chat--message--border-radius: 1.25rem;
+  --chat--message-line-height: 1.6;
+
+  /* Bot Messages */
+  --chat--message--bot--background: var(--chat--color-light);
+  --chat--message--bot--color: #101330;
+  --chat--message--bot--border: none;
+
+  /* User Messages */
+  --chat--message--user--background: var(--chat--color-primary);
+  --chat--message--user--color: var(--chat--color-white);
+  --chat--message--user--border: none;
+  --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+  /* --- Chat Toggle Button --- */
+  --chat--toggle--background: #253145; /* Red accent from your previous design */
+  --chat--toggle--hover--background: #253145;
+  --chat--toggle--active--background: #253145;
+  --chat--toggle--color: var(--chat--color-white);
+  --chat--toggle--size: 64px;
+}
+  </style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255)">
+  <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean"
+    style="background-color: rgb(255, 255, 255)">
+    <div class="container">
+      <img class="logo" src="assets/img/carlogo.jpg" /><a class="navbar-brand textbrand" href="#home"
+        style="background-position: center; background-size: cover; background-repeat: no-repeat; font-family: Roboto, sans-serif; color: rgb(68, 94, 121)">&nbsp;
+        The Garage Dunboyne</a>
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+          navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif">
+        <ul class="nav navbar-nav ml-auto">
+          <!-- <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"
+              style="color: rgb(68, 94, 121)">Contact us&nbsp;&nbsp;</a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" role="presentation" href="#contact" style="color: rgb(0, 0, 0)">(01)8255209</a>
+              <a class="dropdown-item" role="presentation" href="#contact" style="color: rgb(0, 0, 0)">0861081147</a>
+              <a class="dropdown-item" role="presentation" href="#contact"
+                style="color: rgb(0, 0, 0)">john@thegaragedunboyne.ie<br /></a>
+            </div>
+          </li> -->
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#profile"
+              style="font-family: Roboto, sans-serif; color: rgb(68, 94, 121)">Profile</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#services"
+              style="font-family: Roboto, sans-serif; color: rgb(68, 94, 121)">Services</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#location" style="color: rgb(68, 94, 121)">Location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="home" class="jumbotron border rounded-0 headtext"
+    style="background-color: rgb(40, 81, 163); background-image: url('assets/img/top.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat">
+    <h1 id="headtext" style="font-family: Roboto, sans-serif">Welcome to The Garage Dunboyne&nbsp;</h1>
+    </h2>
+    <h1 class="text-white" id="smtexthead" style="font-family: Roboto, sans-serif">
+      <a href="https://thegaragedunboynebookingform.netlify.app/" target="_blank"
+        class="btn btn-info newone pulse animated infinite" role="button" id="scheduleservice"
+        style="background-color: rgba(255, 255, 255, 0)">Book An Appointment</a>
+    </h1>
+    <div class="container topcont" style="font-family: Roboto, sans-serif">
+      <div class="row rowtop">
+        <div class="col coltop3parts">
+          <div data-aos="fade-right" data-aos-duration="950" data-aos-delay="200" class="topdiv"
+            style="background-color: rgba(21, 31, 58, 0.35)">
+            <h1 class="display-3 headtop" style="color: rgb(255, 255, 255)">TYRES</h1>
+            <p class="ptoptext" style="color: rgb(255, 255, 255)">
+              &nbsp;We stock a huge range of tyres and are very competitive on price<br /><a href="#tyres">More&nbsp;<i
+                  class="fa fa-angle-right"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="fade-up" data-aos-duration="950" data-aos-delay="200" class="topdiv"
+            style="background-color: rgba(21, 31, 58, 0.35)">
+            <h1 class="display-3 headtop" style="color: rgb(255, 255, 255)">AIR CON</h1>
+            <p class="ptoptext" style="color: rgb(255, 255, 255)">
+              A full air con service is now available in both new and old cars<br /><a href="#tyres">More&nbsp;<i
+                  class="fa fa-angle-right"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="fade-left" data-aos-duration="950" data-aos-delay="200" class="topdiv"
+            style="background-color: rgba(21, 31, 58, 0.35)">
+            <h1 class="display-3 headtop" style="color: rgb(255, 255, 255)">ALIGNMENT</h1>
+            <p class="ptoptext" style="color: rgb(255, 255, 255)">
+              Get FREE state of art wheel&nbsp; alignment with all sets of tyres.<br /><a href="#services">More&nbsp;<i
+                  class="fa fa-angle-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="timesdiv" style="font-family: Roboto, sans-serif">
+            <h1 style="color: rgb(242, 242, 242)">Gift Vouchers</h1>
+            <h1 style="color: rgb(255, 255, 255)">Are Now Avalable</h1>
+          </div>
+        </div>
+        <div class="col">
+          <div class="timesdiv" style="font-family: Roboto, sans-serif">
+            <h1 class="text-center" style="color: rgb(242, 242, 242)">Opening Hours&nbsp;</h1>
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-size: 38px">9am - 6pm Mon to
+              Fri&nbsp;<br /><br /></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="highlight-phone" style="background-color: rgb(242, 242, 242); filter: sepia(0%)">
+    <div class="container" id="freenctcont">
+      <div class="row">
+        <div class="col-md-8" id="freenct" style="font-family: Roboto, sans-serif">
+          <div class="intro">
+            <h2 id="freencttext"
+              style="color: rgb(7, 28, 59); font-family: Roboto, sans-serif; filter: brightness(99%)">FREE
+              PRE-NCT CHECKS</h2>
+            <p id="NCTP" style="color: rgb(7, 28, 59)">We won't be beaten on price with regular servicing
+              starting from as little as 85 euro!<br /></p>
+            <!-- <a class="btn btn-primary pulse animated infinite" role="button" href="#" onclick="openChatbot(); return false;" style="background-color: rgb(7, 28, 59)">CONTACT</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="service"></div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-4 order-1" data-aos="fade-up"
+        style="background-image: url('assets/img/photo-1509440040931-1505a7cb590e.png'); background-position: center; background-size: cover">
+        <h1></h1>
+      </div>
+      <div class="col-xl-8 offset-xl-0" id="rightcolschedule" style="background-color: rgb(255, 255, 255)">
+        <div>
+          <h1 id="HEADSCHEDULE" style="color: rgb(7, 28, 59); font-family: Roboto, sans-serif; font-weight: 700; margin-bottom: 18px;">SCHEDULE A SERVICE</h1>
+          <p class="text-center" id="pschedule" style="color: rgb(7, 28, 59); font-size: 1.1rem; margin-bottom: 28px;">
+            Why pay exorbitant main dealer prices when you can get it done locally by our team of fully trained specialists? We only use fully accredited OEM parts and lubricants with full warranty.
+          </p>
+          <div class="text-center pb-5 mb-5
+        ">
+            <a href="https://thegaragedunboynebookingform.netlify.app/" target="_blank" class="btn btn-info newone" role="button" style="background-color: rgb(7, 28, 59)">Book Appointment</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background-color: rgb(242, 242, 242)">
+      <div class="col-xl-7 offset-xl-0 order-1 colprofile" style="background-color: #071c3b">
+        <div id="profile"></div>
+        <div id="rightsidedivinfo"></div>
+        <h1 id="profilehead" class="profile" style="color: rgb(255, 255, 255); font-family: Roboto, sans-serif">
+          PROFILE</h1>
+        <p class="prightprofile" style="color: rgb(255, 255, 255); font-family: Roboto, sans-serif">
+          <br />Trading over 40 years The Garage Dunboyne is a family run locally owned business. We
+          specialise in all types of mechanical repairs with no job too big or small. We have a dedicated
+          team of fully trained professionals who can cater for all your automotive needs.<br /><br />
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="nctcontsm"
+    style="font-family: Roboto, sans-serif; background-color: rgb(242, 242, 242)">
+    <div class="row row-cols-1">
+      <div class="col" id="colheadnctsm" style="background-color: #ffffff">
+        <h1 class="headsmnct">FREE PRE-NCT SERVICE</h1>
+        <p class="text-center" id="pnctsm"><br />We wont be beaten on price with regular servicing starting from
+          as little as 85 euro.<br /><br /></p>
+      </div>
+      <div class="col" id="colnctimgsm" style="background-color: #ffffff">
+        <img id="nctsming" src="assets/img/NCTLOGO.jpg" />
+      </div>
+    </div>
+  </div>
+  <div id="tyres"></div>
+  <div class="features-boxed" style="background-color: rgb(242, 242, 242)">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="450" id="tyrecont">
+      <div class="row">
+        <div class="col" id="hankooksm">
+          <img data-aos="zoom-in-right" id="hankookbigimg" src="assets/img/download.jpg" />
+        </div>
+        <div class="col-xl-1 midcol">
+          <hr class="rubberBand animated" id="hrvertical" />
+        </div>
+        <div class="col">
+          <p class="text-center hankookp" data-aos="zoom-in-left"
+            style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif">
+            &nbsp;<br />
+            We source tyres from Hankook in order to guarantee their quality.Your tyres are the only part of
+            the car which are in contact with the road, the quality of tyres therefore has a big
+            impact on the drivability of vehicles. We stock all sizes available on the market from
+            Hankook.<br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="400">
+      <div class="row">
+        <div class="col" id="hankooksm">
+          <h1 class="display-4" id="aircontitle">AIR CON</h1>
+        </div>
+        <div class="col-xl-1 midcol">
+          <hr class="rubberBand animated" id="hrvertical" />
+        </div>
+        <div class="col">
+          <p class="text-center hankookp" data-aos="zoom-in-left"
+            style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif">
+            &nbsp;<br />At the Garage Dunboyne a full air con service is now available in both new and old
+            cars we De-gas &amp; deep vacuum to remove all old refrigerant. We also do a System
+            pressure test and Replace old compressor oil. Leaving you with a perfectly serviced air con
+            system. <br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="services"></div>
+    <div class="container">
+      <div class="intro"></div>
+      <div class="row justify-content-center features"
+        style="background-color: rgb(242, 242, 242); font-family: Roboto, sans-serif">
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-down" data-aos-duration="650"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-regular fa-circle-dot fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Tyre Sales</h3>
+            <p class="description">
+              We stock a large range of tyres to cater for all sizes. We can source any tyre
+              requested.Brands include: Hankook, Michelin, Pirelli, Bridgestone, Vredestein and
+              Continental.We have the
+              tyre to suit any budget!<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-down" data-aos-duration="650"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-solid fa-arrow-trend-up fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Diagnostics</h3>
+            <p class="description">
+              We have the latest in diagnostic equipment to diagnose most vehicle models running faults.
+              Having the latest diagnostic equipment to hand helps us find faults quicker. If a fault is
+              found we can usually deal with it the next day ensuring labour costs are kept to a
+              minimum.<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-down" data-aos-duration="650"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-regular fa-clipboard fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Wheel Alignment</h3>
+            <p class="description">
+              Our new Laser Wheel Alignment system takes wheel alignment equipment to the next generation.
+              This technology provides the ultimate performance in fast, easy and accurate align-ments
+              while minimizing the possibilities of errors due to operator and vehicle variables.<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-right" data-aos-duration="750"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-solid fa-battery-three-quarters fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Batteries</h3>
+            <p class="description">
+              We stock a large selection of batteries for all makes and models. In the unlikely event that
+              the battery you require is out of stock, we would normally be able to supply you with one
+              within the hour.<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-up" data-aos-duration="750"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-solid fa-car fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Vehicle Repairs<br /></h3>
+            <p class="description">We specialise in all types of vehicle repairs including timing belts,
+              clutches, engine rebuilding, panel beating and Pre and Post NCT repairs.<br /></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-left" data-aos-duration="750"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-regular fa-lightbulb fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Car Accesories</h3>
+            <p class="description">
+              We stock an extensive range of bulbs and wipers, so matter what the weather/driving
+              conditions are like, our customers can feel safe that they will have perfect visibility
+              every
+              journey.<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-up" data-aos-duration="850"
+            style="background-color: rgb(242, 242, 242)">
+            <h1 id="NCTHEAD" style="padding: 0"></h1>
+            <h3 id="smalliconpadding" class="name">Free Pre NCT Checks</h3>
+            <p class="description">Pop in and get a free Pre-NCT check and make sure your car passes the NCT
+              without any fuss.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-up" data-aos-duration="850"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-solid fa-truck-pickup fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Vehicle Collection</h3>
+            <p class="description">We also provide a local vehicle collection and delivery service.Have your
+              vehicle serviced while you work!<br /></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="border rounded-0 box" data-aos="fade-up" data-aos-duration="850"
+            style="background-color: rgb(242, 242, 242)">
+            <i class="fa-solid fa-car-side fa-3x"></i>
+            <h3 id="smalliconpadding" class="name">Courtesy Cars</h3>
+            <p class="description">We can provide a courtesy car to limit the hassle of being without
+              transport while your car is with us!<br /><br /></p>
+          </div>
+        </div>
+      </div>
+      <div id="contact"></div>
+    </div>
+  </div>
+  <section id="GETINTOUCH-1" style="background-color: #071c3b">
+    <div class="container-fluid" id="contactcont" style="color: rgb(1, 12, 36); background-color: rgba(1, 12, 36, 0)">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4" style="font-family: Roboto, sans-serif; color: rgb(255, 255, 255)">CONTACT US
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr data-aos="fade-up" data-aos-duration="3000" id="hrnew" style="color: rgb(255, 255, 255)" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col contacttext">
+          <p data-aos="fade-up" data-aos-duration="3000" class="getintouchtext" style="color: rgb(255, 255, 255)">
+            Use the chat <i class="fa-regular fa-comments" aria-label="chat icon" style="font-size:1.2em; vertical-align:middle;"></i> to ask us any quiries about our services and book an appointment with us</p>
+        </div>
+      </div>
+      
+      <!-- <div class="row">
+        <div class="col text-center">
+          <button onclick="openChatbot();" class="btn btn-lg" style="background: #fff; color: #071c3b; font-weight: bold; border-radius: 30px; padding: 14px 36px; box-shadow: 0 2px 8px rgba(40,81,163,0.10); margin-top: 18px; margin-bottom: 18px;">Contact Us via Chat</button>
+        </div>
+      </div> -->
+      <div id="location"></div>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mapcol" style="background-color: #f2f1f0">
+        <div data-aos="fade-up" data-aos-duration="700" id="locationdiv">
+          <h1 id="headlocation" style="color: rgb(7, 28, 59)">Location</h1>
+          <p id="locationp" style="color: rgb(7, 28, 59)"><br />The Garage Dunboyne,<br />Unit 3 Dunboyne
+            Industrial Estate,<br />Dunboyne, Co.Meath&nbsp;<br /><br /></p>
+        </div>
+      </div>
+      <div class="col-xl-5 mapcol" id="mapdb" style="background-color: #f2f1f0">
+        <iframe id="mapframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=The%20Garage%20Dunboyne,%20Unit%203%20Dunboyne%20Industrial%20Estate,%20Dunboyne,%20Co.Meath%20%20Dunboyne+(The%20Garage%20Dunboyne)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <a href="https://www.symptoma.com/en/info/covid-19">.</a>
+        <script type="text/javascript"
+          src="https://embedmaps.com/google-maps-authorization/script.js?id=457f4b5ed8db93a1709cb97587c5d44c8a2c99e7"></script>
+      </div>
+    </div>
+  </div>
+  <div class="brands">
+    <a id="brands" href="#" style="filter: grayscale(100%)">
+      <img src="assets/img/bridgestone-logo-5500x1500.png" />
+      <img src="assets/img/images.png" />
+      <img id="hankookimgbrands" src="assets/img/Hankook-Tire-2019.jpg" />
+      <img src="assets/img/DUNLOP-LOGO-4.jpg" />
+      <img id="mechelin" src="assets/img/images%20(1).png" /></a>
+  </div>
+  <div class="footer-basic" style="background-color: #071c3b; font-family: Roboto, sans-serif">
+    <footer>
+      <div class="social" style="color: rgb(255, 255, 255)"></div>
+      <ul class="list-inline" style="color: rgb(255, 255, 255)">
+        <li class="list-inline-item"><a href="#home">Home</a></li>
+        <li class="list-inline-item"><a href="#services">Services</a></li>
+        <li class="list-inline-item"><a href="#profile">Profile</a></li>
+        <li class="list-inline-item">
+          <a href="#service">Schedule Service</a>
+        </li>
+        <li class="list-inline-item"><a href="#location">Location</a></li>
+      </ul>
+
+      <p class="copyright" style="color: rgb(237, 237, 238)">TheGarageDunboyne © 2023</p>
+    </footer>
+
+
+
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/bs-init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    
+
+    createChat({
+      webhookUrl: 'https://redboxrob.app.n8n.cloud/webhook/6c8fa3cd-8b8f-41b9-9313-c8117579beb9/chat',
+      webhookConfig: {
+        method: 'POST',
+        headers: {}
+      },
+      target: '#n8n-chat',
+      mode: 'window',
+      chatInputKey: 'chatInput',
+      chatSessionKey: 'sessionId',
+      loadPreviousSession: true,
+      metadata: {},
+      showWelcomeScreen: false,
+      defaultLanguage: 'en',
+      initialMessages: [
+        'Hi there',
+        'Use this chat to book in a service or ask anything about the business'
+      ],
+      i18n: {
+        en: {
+          title: '',
+          subtitle: "Start a chat. We're here to help you 24/7.",
+          footer: '',
+          getStarted: 'New Conversation',
+          inputPlaceholder: 'Type your question..',
+        },
+      },
+      enableStreaming: false,
+    });
+
+  </script>
+
+<!-- <script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  let chat;
+
+  document.getElementById('open-chat').addEventListener('click', async () => {
+    if (!chat) {
+      chat = await createChat({
+        webhookUrl: 'https://redboxrob.app.n8n.cloud/webhook/6c8fa3cd-8b8f-41b9-9313-c8117579beb9/chat',
+        webhookConfig: {
+          method: 'POST',
+          headers: {}
+        },
+        target: '#n8n-chat',
+        mode: 'window',
+        chatInputKey: 'chatInput',
+        chatSessionKey: 'sessionId',
+        loadPreviousSession: true,
+        metadata: {},
+        showWelcomeScreen: false,
+        defaultLanguage: 'en',
+        initialMessages: [
+          'Hi there',
+          'Use this chat to book in a service or ask anything about the business'
+        ],
+        i18n: {
+          en: {
+            title: '',
+            subtitle: "Start a chat. We're here to help you 24/7.",
+            footer: '',
+            getStarted: 'New Conversation',
+            inputPlaceholder: 'Type your question..',
+          },
+        },
+        enableStreaming: false,
+      });
+    }
+
+    // Simulate a click on the floating chat launcher (if needed)
+    const chatLauncher = document.querySelector('[data-testid="chat-toggle-button"]');
+    if (chatLauncher) chatLauncher.click();
+  });
+</script> -->
+</body>
+
+</html>

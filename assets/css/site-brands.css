@@ -1,0 +1,1212 @@
+@media (min-width: 1200px) {
+  #profilehead {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hrvertical {
+    padding-top: 20px;
+  }
+}
+
+.brands {
+  color: #313437;
+  background-color: #fff;
+}
+
+.brands a {
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media (max-width:767px) {
+  .brands a {
+    padding: 30px 0;
+  }
+}
+
+.brands a img {
+  display: inline-block;
+  margin: 10px 20px;
+  vertical-align: middle;
+}
+
+#map {
+}
+
+.col-xl-5.mapcol {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  #headtext {
+    font-size: 100px;
+  }
+}
+
+.jumbotron.border.rounded-0.headtext {
+}
+
+.jumbotron.border.rounded-0.headtext {
+}
+
+@media (min-width: 1200px) {
+  #headtext {
+    font-size: 70px !important;
+  }
+}
+
+@media (min-width: 300px) {
+  #map-head {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) {
+  #map-head {
+    font-size: 50PX;
+  }
+}
+
+@media (min-width: 992px) {
+  #map-head {
+    font-size: 70PX;
+  }
+}
+
+@media (min-width: 300px) {
+  #profile {
+    font-size: 40PX !IMPORTANT;
+  }
+}
+
+#leftsideinfopic {
+  text-align: center;
+  margin: auto;
+}
+
+#carimage {
+  width: 100%;
+}
+
+#rightsidedivinfo {
+  text-align: center;
+}
+
+.prightprofile {
+  text-align: center;
+  padding-top: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+#leftsideinfopic {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 300px) {
+  #leftsideinfopic {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #leftsideinfopic {
+    display: block;
+  }
+}
+
+.h1, h1 {
+}
+
+.col {
+}
+
+.col {
+}
+
+@media (min-width: 1920px) {
+  .col.colprofile {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #profilehead {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .prightprofile {
+    font-size: 22px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col.colprofile {
+    padding-bottom: 130px;
+  }
+}
+
+.container-fluid.d-inline-block {
+}
+
+@media (min-width: 992px) {
+  #profilehead {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 300px) {
+  .col.colprofile {
+    padding-bottom: 140px;
+  }
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  margin-top: -32px;
+}
+
+#profilehead {
+  margin-top: 0px;
+}
+
+.prightprofile {
+  margin-bottom: 140px;
+}
+
+#rightcolschedule {
+  background: rgb(0,15,38);
+}
+
+.h1, h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 0px;
+}
+
+#profilehead {
+}
+
+#profilehead {
+  margin-top: 120PX;
+}
+
+.HAEDSCHEDULE {
+}
+
+#HEADSCHEDULE {
+  margin-top: 70px;
+  font-size: 60px;
+}
+
+p {
+}
+
+#pschedule {
+  margin: auto;
+  padding-top: 30px;
+}
+
+#HEADSCHEDULE {
+  margin-top: 120px;
+}
+
+#pschedule {
+  margin-bottom: 100px;
+}
+
+#pschedule {
+  font-size: 20px;
+  width: 400px;
+}
+
+.prightprofile {
+  font-size: 20px;
+}
+
+@media (min-width: 300px) {
+  #pschedule {
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 360px) {
+  #HEADSCHEDULE {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #HEADSCHEDULE {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #HEADSCHEDULE {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #pschedule {
+    margin-bottom: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  #HEADSCHEDULE {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  #profilehead {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-light .navbar-brand {
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbotron.border.rounded-0.headtext {
+    /*height: 800px;*/
+    padding-top: 200px !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .jumbotron.border.rounded-0.headtext {
+    /*height: 1000px !important;*/
+    padding-top: 300px !important;
+  }
+}
+
+.dropdown-toggle {
+  margin: auto;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  border-color: white;
+  /*shadow: 100px;*/
+}
+
+#scheduleservice :hover {
+  background-color: white !important;
+}
+
+a:not([href]):hover {
+  background-color: white !important;
+  color: rgb(40,81,163);
+}
+
+.highlight-phone {
+  margin-top: -35px;
+}
+
+.col-sm-4 {
+  margin: auto;
+  text-align: center;
+}
+
+#nct {
+  width: 240px;
+}
+
+.col-md-8 {
+}
+
+#freenct {
+  padding-bottom: 10px;
+}
+
+.h2, h2 {
+}
+
+#freencttext {
+  font-size: 40px;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+#freenctcont {
+  margin-bottom: 30px;
+}
+
+.btn.btn-primary {
+  /*background-color: red;*/
+}
+
+p {
+}
+
+#NCTP {
+}
+
+@media (min-width: 768px) {
+  #NCTP {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #NCTP {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #NCTP {
+    width: 500px;
+  }
+}
+
+#freenctcont {
+}
+
+@media (min-width: 300px) {
+  .highlight-phone {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .highlight-phone {
+    display: block;
+  }
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+@media (min-width: 768px) {
+  #nctcontsm {
+    display: none;
+  }
+}
+
+#nctcontsm {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+#colheadnctsm {
+}
+
+p {
+}
+
+#pnctsm {
+  width: 300px;
+  margin: auto;
+}
+
+#nctsming {
+  margin: auto;
+  text-align: center;
+}
+
+.row-cols-1 > * {
+}
+
+#colnctimgsm {
+  text-align: center;
+  padding: 50px;
+}
+
+.headsmnct {
+  padding-top: 170px;
+}
+
+#nctsming {
+  width: 200px;
+}
+
+#map-head {
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  #map-head {
+  }
+}
+
+@media (min-width: 1920px) {
+  #map-head {
+    margin-top: 100px;
+    font-size: 80px;
+  }
+}
+
+#imgcol {
+  height: 600px;
+}
+
+.h1, h1 {
+}
+
+#contact {
+}
+
+#WHITECONT {
+  height: 200px;
+}
+
+.row {
+}
+
+#contactrow {
+  margin-bottom: 300px;
+}
+
+#headcontact {
+  margin-bottom: 200px;
+  font-size: 80PX;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+#contact {
+  margin-bottom: 60px;
+}
+
+.col {
+}
+
+.col.contacttext {
+  text-align: center;
+}
+
+.col {
+}
+
+#hrnew {
+  width: 50px;
+  border: solid 3px rgb(255,255,255);
+  margin-top: 20px;
+}
+
+#contactcont {
+}
+
+.italictext {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.h1, h1 {
+}
+
+#num {
+  padding-top: 20px;
+}
+
+#locationdiv {
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+@media (min-width: 300px) {
+  .display-3 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .display-3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .display-3 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 300px) {
+  #num {
+    font-size: 30px;
+  }
+}
+
+.display-3 {
+  padding-top: 20px;
+}
+
+.col {
+}
+
+#contactcont {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.h1, h1 {
+}
+
+#map-head {
+  width: 200px;
+}
+
+#map-head {
+  margin-right: -10px;
+}
+
+#locationdiv {
+  margin-top: 50px;
+}
+
+.headdiv {
+  padding-top: 20px;
+}
+
+#headlocation {
+  font-size: 60px;
+}
+
+.col-xl-7.offset-xl-0.order-1.colprofile {
+  margin: auto;
+}
+
+@media (min-width: 1920px) {
+  #locationdiv {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #headlocation {
+    font-size: 80px;
+  }
+}
+
+.whatwedocont {
+  margin-top: 100px;
+}
+
+.pdivtop {
+  text-align: center;
+}
+
+.darkdivtop {
+  background-color: rgba(54,70,111,0.3);
+  border-radius: 30px;
+  width: 340px;
+}
+
+.display-4.headdiv {
+  font-size: 30px;
+}
+
+.pdivtop {
+  font-size: 15px;
+  padding-top: 5px;
+  width: 300px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.darkdivtop {
+}
+
+@media (min-width: 1200px) {
+  .darkdivtop {
+    display: block;
+  }
+}
+
+.darkdivtop {
+}
+
+@media (min-width: 300px) {
+  #headtext {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 300px) {
+  .darkdivtop {
+    width: 300px;
+  }
+}
+
+.col.coldivtop {
+}
+
+@media (min-width: 300px) {
+  .container.whatwedocont {
+    padding-right: 100px !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .topcont {
+    margin-top: 40px;
+  }
+}
+
+.rowtop {
+}
+
+.coltop3parts {
+}
+
+@media (min-width: 300px) {
+  .headtop {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 300px) {
+  .ptoptext {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 300px) {
+  .topdiv {
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+}
+
+#linkicon {
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .container.topcont {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .topdiv {
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+.jumbotron.border.rounded-0.headtext {
+}
+
+@media (min-width: 992px) {
+  #headtext {
+  }
+}
+
+.jumbotron.border.rounded-0.headtext {
+}
+
+@media (min-width: 1200px) {
+  .jumbotron.border.rounded-0.headtext {
+    padding-top: 400px !important;
+  }
+}
+
+#freenct {
+  margin: auto;
+  text-align: center;
+}
+
+.intro {
+  margin: auto;
+}
+
+#NCTHEAD {
+  padding-top: 25px;
+  padding-bottom: 41px;
+  font-weight: bold;
+}
+
+.fa.fa-dot-circle-o {
+  font-size: 60px;
+  margin-top: 11px;
+  margin-bottom: 44px;
+}
+
+img {
+}
+
+#hankookimgbrands {
+  padding-top: 4px;
+}
+
+img {
+}
+
+#mechelin {
+  padding-bottom: 4px;
+}
+
+#hankookbigimg {
+  width: 400px;
+}
+
+p {
+}
+
+.hankookp {
+}
+
+@media (min-width: 300px) {
+  #hankookbigimg {
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.col {
+}
+
+@media (min-width: 300px) {
+  .hankookp {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 40PX;
+  }
+}
+
+.col {
+}
+
+@media (min-width: 300px) {
+  #hankooksm {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #hankookbigimg {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hankookbigimg {
+  }
+}
+
+@media (min-width: 1200px) {
+  .hankookp {
+    /*padding-top: 40px;*/
+    margin: auto;
+    padding-top: 85px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center.hankookp {
+    margin: auto;
+    padding-top: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hankookbigimg {
+    width: 300px;
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-center.hankookp {
+    font-size: 14px;
+    padding-top: 30px;
+    float: left;
+  }
+}
+
+.midcol {
+  width: 20px;
+}
+
+#hrvertical {
+  border: solid 2px;
+  width: 1px;
+  height: 200px;
+  background-color: rgb(7,28,59);
+}
+
+@media (min-width: 300px) {
+  .col-xl-1.midcol {
+    display: none;
+  }
+}
+
+.col-xl-1.midcol {
+}
+
+@media (min-width: 768px) {
+  .col-xl-1.midcol {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-boxed {
+  }
+}
+
+@media (min-width: 768px) {
+  .text-center.hankookp {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center.hankookp {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hrvertical {
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center.hankookp {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  #hankookbigimg {
+    width: 300px;
+  }
+}
+
+@media (min-width: 576px) {
+  .text-center.hankookp {
+    margin: auto;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 300px) {
+  .text-center.hankookp {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-center.hankookp {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .headsmnct {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 300px) {
+  .headsmnct {
+    padding-top: 60px;
+  }
+}
+
+#NCTP {
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.topdiv {
+  border: solid 1px rgba(0,0,0,0.28);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.58);
+  /*border-left: 1px solid gainsboro;*/
+  /*border-top: 1px solid gainsboro;*/
+}
+
+.display-3 {
+}
+
+#giftcard {
+  font-size: 40px;
+  padding-top: 100px;
+}
+
+.timesdiv {
+  padding-top: 80px;
+}
+
+.giftcard {
+  padding-top: 80px;
+  width: 400px;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+.text-center.hankookpsp {
+}
+
+.text-center.hankookp.sp {
+  float: right;
+}
+
+#hankookbigimg-sp {
+}
+
+#hankookbigimg-sp {
+}
+
+#hankookbigimg-sp {
+}
+
+img {
+}
+
+#alignimg {
+  width: 150px;
+  margin: auto;
+  padding-top: 30px;
+  float: left;
+}
+
+.image.div {
+  padding-left: 50px;
+}
+
+.h1, h1 {
+}
+
+.headmiddletext {
+  width: 300px;
+  float: right;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.pmiddle {
+  width: 300px;
+  float: right;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 100px;
+}
+
+@media (min-width: 300px) {
+  #alignimg {
+  }
+}
+
+@media (min-width: 300px) {
+  .image.div {
+    margin: auto;
+  }
+}
+
+.h1, h1 {
+}
+
+.AIRCONPIC {
+  padding-top: 80PX;
+  float: right;
+  margin-right: 30px;
+}
+
+img {
+}
+
+#rightimagefloat {
+  float: left;
+  margin-left: 30px;
+}
+
+#car-fafa {
+}
+
+#car-fafa {
+  border-color: white;
+}
+
+#hrvertical {
+  border-color: rgb(7,28,59);
+  width: 2px;
+}
+
+#rightimagefloat {
+  padding-top: 20px;
+  width: 400px;
+}
+
+.image.div {
+  width: 200px;
+}
+
+#mid-col {
+  height: initial;
+}
+
+#spdiv {
+  width: 330px;
+  float: right;
+  height: 220px;
+  text-align: center;
+}
+
+.alignmenthead {
+  padding-top: 20px;
+}
+
+@media (min-width: 300px) {
+  #rightimagefloat {
+    width: 300px;
+  }
+}
+
+#blackimg {
+  margin: auto;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+#tyrecont {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 300px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1450px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1300px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1100px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron.border.rounded-0.headtext {
+    height: 1200px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron.border.rounded-0.headtext {
+    padding-bottom: 800px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbotron.border.rounded-0.headtext {
+    padding-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .display-4.AIRCONPIC {
+    padding-right: 30px;
+  }
+}
+
+#hankooksm {
+}
+
+.display-4.text-right {
+  margin-top: 90PX;
+}
+
+@media (min-width: 300px) {
+  .display-4.text-right {
+    text-align: center;
+  }
+}
+
+.display-4 {
+}
+
+@media (min-width: 300px) {
+  #aircontitle {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  #aircontitle {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  #aircontitle {
+    padding-left: 200px;
+    padding-top: 90px;
+  }
+}
+
+#aircontitle {
+}
+
+@media (min-width: 1200px) {
+  #aircontitle {
+    padding-left: 200px;
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #aircontitle {
+    padding-left: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  #aircontitle {
+    float: right;
+  }
+}
+
+
+/*
+     FILE ARCHIVED ON 23:21:30 May 13, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:03 Jun 22, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 76.651
+  exclusion.robots: 0.192
+  exclusion.robots.policy: 0.181
+  cdx.remote: 0.053
+  esindex: 0.008
+  LoadShardBlock: 52.788 (3)
+  PetaboxLoader3.datanode: 192.223 (4)
+  load_resource: 220.421
+  PetaboxLoader3.resolve: 74.75
+*/
