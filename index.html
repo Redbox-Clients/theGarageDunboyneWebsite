@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/css/brands.min.css" />
   <link rel="stylesheet" href="assets/css/solid.min.css" />
   <link rel="stylesheet" href="assets/css/regular.min.css" />
+  <!-- Font Awesome CDN fallback for WhatsApp icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
   <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
   <link rel="stylesheet" href="assets/css/site-brands.css" />
@@ -119,6 +121,54 @@
   --chat--toggle--color: var(--chat--color-white);
   --chat--toggle--size: 64px;
 }
+
+/* WhatsApp Widget Styles */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  text-decoration: none !important;
+}
+
+.whatsapp-widget:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  text-decoration: none !important;
+}
+
+.whatsapp-widget i {
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+@media (max-width: 768px) {
+  .whatsapp-widget {
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-widget i {
+    font-size: 26px;
+    font-weight: 900;
+  }
+}
   </style>
 </head>
 
@@ -165,7 +215,14 @@
     <h1 class="text-white" id="smtexthead" style="font-family: Roboto, sans-serif">
       <a href="https://thegaragedunboynebookingform.netlify.app/" target="_blank"
         class="btn btn-info newone pulse animated infinite" role="button" id="scheduleservice"
-        style="background-color: rgba(255, 255, 255, 0)">Book An Appointment</a>
+        style="background-color: rgba(255, 255, 255, 0)">
+        Schedule a Service
+       <!-- Calendly link widget begin -->
+    <!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a href="" class="btn btn-info newone pulse animated infinite" role="button" id="scheduleservice"
+        style="background-color: rgba(255, 255, 255, 0)" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rdancole-vyuj/10-car-slots?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=253145'});return false;">Schedule time with me</a> -->
+    <!-- Calendly link widget end --></a>
     </h1>
     <div class="container topcont" style="font-family: Roboto, sans-serif">
       <div class="row rowtop">
@@ -450,7 +507,7 @@
       <div class="row">
         <div class="col contacttext">
           <p data-aos="fade-up" data-aos-duration="3000" class="getintouchtext" style="color: rgb(255, 255, 255)">
-            Use the chat <i class="fa-regular fa-comments" aria-label="chat icon" style="font-size:1.2em; vertical-align:middle;"></i> to ask us any quiries about our services and book an appointment with us</p>
+            <i class="fa-regular fa-comments" aria-label="chat icon" style="font-size:1.2em; vertical-align:middle;"></i>Contact our WhatsApp at +353 86 108 1147 with any enquiries</p>
         </div>
       </div>
       
@@ -463,22 +520,37 @@
     </div>
   </section>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col mapcol" style="background-color: #f2f1f0">
-        <div data-aos="fade-up" data-aos-duration="700" id="locationdiv">
-          <h1 id="headlocation" style="color: rgb(7, 28, 59)">Location</h1>
-          <p id="locationp" style="color: rgb(7, 28, 59)"><br />The Garage Dunboyne,<br />Unit 3 Dunboyne
-            Industrial Estate,<br />Dunboyne, Co.Meath&nbsp;<br /><br /></p>
+  <div class="container-fluid" style="background-color: #f2f1f0; padding: 60px 0;">
+    <div class="container">
+      <!-- Location Title Section -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h1 id="headlocation" style="color: rgb(7, 28, 59); font-family: Roboto, sans-serif; font-size: 3rem; font-weight: 700; margin-bottom: 30px;" data-aos="fade-up" data-aos-duration="700">Location</h1>
+          <p id="locationp" style="color: rgb(7, 28, 59); font-size: 1.2rem; line-height: 1.8; margin-bottom: 0;" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            The Garage Dunboyne<br />
+            Unit 3 Dunboyne Industrial Estate<br />
+            Dunboyne, Co. Meath
+          </p>
         </div>
       </div>
-      <div class="col-xl-5 mapcol" id="mapdb" style="background-color: #f2f1f0">
-        <iframe id="mapframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=The%20Garage%20Dunboyne,%20Unit%203%20Dunboyne%20Industrial%20Estate,%20Dunboyne,%20Co.Meath%20%20Dunboyne+(The%20Garage%20Dunboyne)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        <a href="https://www.symptoma.com/en/info/covid-19">.</a>
-        <script type="text/javascript"
-          src="https://embedmaps.com/google-maps-authorization/script.js?id=457f4b5ed8db93a1709cb97587c5d44c8a2c99e7"></script>
+      
+      <!-- Map Section -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <div class="map-container" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(7, 28, 59, 0.2);" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+            <iframe id="mapframe" 
+              frameborder="0" 
+              scrolling="no" 
+              marginheight="0" 
+              marginwidth="0"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=The%20Garage%20Dunboyne,%20Unit%203%20Dunboyne%20Industrial%20Estate,%20Dunboyne,%20Co.Meath%20%20Dunboyne+(The%20Garage%20Dunboyne)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+          </div>
+        </div>
       </div>
+      
+      <!-- Contact Info Section -->
     </div>
   </div>
   <div class="brands">
@@ -513,7 +585,7 @@
   <script src="assets/js/bs-init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
-  <script type="module">
+  <!-- <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
     
@@ -548,7 +620,7 @@
       enableStreaming: false,
     });
 
-  </script>
+  </script> -->
 
 <!-- <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
@@ -593,6 +665,12 @@
     if (chatLauncher) chatLauncher.click();
   });
 </script> -->
+
+  <!-- WhatsApp Widget -->
+  <a href="https://wa.me/353861081147?text=Hi%20there,%20I'd%20like%20to%20enquire%20about%20your%20services" target="_blank" class="whatsapp-widget" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
 </body>
 
 </html>
